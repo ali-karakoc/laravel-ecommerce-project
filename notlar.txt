@@ -1,0 +1,7 @@
+php -version
+composer -version
+composer create-project laravel/laravel sample-project
+nmp install
+composer install
+docker run --name laravel_mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -e MYSQL_DATABASE=db_ecommerce -e MYSQL_USER=user_ecommerce -e MYSQL_PASSWORD=123456 -d mysql:5.7
+env dosyasından database' i ayarla.
